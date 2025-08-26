@@ -10,8 +10,8 @@ class Nombre(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"message": "Hola Mundo!"}
+    return {"message": "Hola Mundo!!"}
 
 @app.post("/saludar")
 def saludar(data: Nombre):
-    return {"message": f"Hola {data.nombre}"}
+    return {"message": f"Hola, {data.nombre}"}
